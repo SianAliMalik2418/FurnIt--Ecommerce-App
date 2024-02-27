@@ -1,0 +1,132 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'daisyui/dist/full.css';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.menuItems::after{
+content: " ";
+display: block;
+width: 0px;
+height: 2px;
+background-color: black;
+transition: 0.2s ease-in-out all;
+}
+
+.menuItems:hover::after{
+   width: 100%;
+}
+
+.heroImage {
+  background: url("../src/assests/images/livingRoomResponsive.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.heroImage2 {
+  background: url("../src/assests/images/bedroomResponsive.jpg");
+  background-position: center;
+  background-size: cover;
+
+
+}
+
+.heroImage3 {
+  background: url("../src/assests/images/kitchenResponsive.jpg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.productPageImg{
+  background: url("./assests/images/firePlace.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-width:1024px) {
+  .heroImage {
+    background: url("../src/assests/images/livingRoomLg.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .heroImage2 {
+    background: url("../src/assests/images/diningLg.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .heroImage3 {
+    background: url("../src/assests/images/kitchenLg.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+
+}
+
+.heroSwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+   
+  background-color: rgb(238, 237, 222);
+
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slick-prev {
+  left: -8px;
+  z-index: 10;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.slick-prev:hover{
+  background-color: rgb(100, 100, 100);
+
+}
+
+.slick-next {
+  right: 0px;
+  z-index: 10;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.slick-next:hover{
+  background-color: rgb(100, 100, 100);
+}

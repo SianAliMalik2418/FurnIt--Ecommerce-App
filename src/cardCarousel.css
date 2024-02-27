@@ -1,0 +1,32 @@
+.cardSwiper{
+    height: 30rem !important;
+    width: 20rem!important;
+    padding: 1rem;
+}
+
+@media screen and (min-width:1024px) {
+  .cardSwiper{
+    height: 35rem !important;
+    width: 25rem !important;
+}
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #A0A0A0;
+    
+  }
+
+  .swiper-pagination {
+    color: black;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+ 

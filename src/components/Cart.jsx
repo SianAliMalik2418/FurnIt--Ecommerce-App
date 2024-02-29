@@ -65,7 +65,7 @@ function Cart() {
         </div>
 
 
-        <div className="checkout w-full lg:right-20 lg:z-[10] lg:top-[12rem]  bg-[#ecebeb] py-5 pb-20 mt-5 md:mt-8 md:w-[70%] lg:w-fit">
+        <div className="checkout w-full lg:right-20 lg:z-[10] lg:top-[12rem]  bg-[#ecebeb] py-5 pb-20 mt-5 md:mt-8 md:w-[70%] lg:w-fit overflow-hidden">
           <div className='flex flex-col items-start justify-start px-7'>
             <h1 className='text-black font-semibold  text-2xl'>Cart Total</h1>
 
@@ -76,8 +76,8 @@ function Cart() {
                 <span className='text-black font-semibold text-xl'>${totalPriceAfterIncrement}</span>
               </div>
 
-              <div className=' py-3 flex w-fit md:w-full'>
-                <input type="text" className='px-3  rounded-md bg-[#FFFFFF] md:w-full outline-none text-black font-semibold' placeholder='Apply Voucher Code...' />
+              <div className=' py-3 flex flex-col w-fit gap-3  md:w-full md:flex-row'>
+                <input type="text" className='px-8 py-4  rounded-md bg-[#FFFFFF] md:w-full outline-none text-black font-semibold' placeholder='Apply Voucher Code...' />
                 <button className='bg-black text-white rounded-md py-3 px-7'>Apply</button>
               </div>
 

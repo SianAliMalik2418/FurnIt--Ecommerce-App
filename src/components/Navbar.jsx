@@ -55,10 +55,10 @@ function Navbar() {
                 menuOpen ? (
                     <div className='bg-[#FEE3CA] px-10   w-full top-32 transition-all left-0 z-[76] absolute'>
                         <div className='flex flex-col text-2xl py-10 text-black font-semibold gap-4'>
-                            <Link to={"/"} className='menuItems relative w-fit' onClick={() => setMenuOpen(!menuOpen)}>Home</Link>
-                            <Link to={"/products"} className='menuItems relative w-fit' onClick={() => setMenuOpen(!menuOpen)}>Products</Link>
-                            <a href="" className='menuItems relative w-fit' onClick={() => setMenuOpen(!menuOpen)}>About</a>
-                            <a href="" className='menuItems relative w-fit' onClick={() => setMenuOpen(!menuOpen)}>Services</a>
+                            <Link to={"/"} className='menuItems relative w-fit' >Home</Link>
+                            <Link to={"/products"} className='menuItems relative w-fit' >Products</Link>
+                            <a href="" className='menuItems relative w-fit' >About</a>
+                            <a href="" className='menuItems relative w-fit' >Services</a>
                         </div>
                     </div>
                 ) : (

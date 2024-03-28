@@ -65,7 +65,7 @@ function Cart() {
         </div>
 
 
-        <div className="checkout w-full lg:right-20 lg:z-[10] lg:top-[12rem]  bg-[#ecebeb] py-5 pb-20 mt-5 md:mt-8 md:w-[70%] lg:w-fit overflow-hidden">
+        <div className="checkout  w-full lg:right-28  lg:z-[10] lg:top-[12rem]  bg-[#ecebeb] py-5 pb-20 mt-5 md:mt-8 md:w-[70%] lg:w-fit  overflow-hidden">
           <div className='flex flex-col items-start justify-start px-7'>
             <h1 className='text-black font-semibold  text-2xl'>Cart Total</h1>
 

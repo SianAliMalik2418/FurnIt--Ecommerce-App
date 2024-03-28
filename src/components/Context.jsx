@@ -9,6 +9,7 @@ function Context({ children }) {
   let [totalPriceAfterIncrement, setTotalPriceAfterIncrement] = useState(null);
   let [category, setCategory] = useState("All Products");
   let [cartIcon, setCartIcon] = useState(false);
+  let [productDetails,setProductDetails] = useState([]);
 
   function addToCart(product) {
     setCartProducts((prevProducts) => [...prevProducts, product]);
@@ -77,6 +78,8 @@ function Context({ children }) {
         handleRemoveFromCart,
         setCartIcon,
         cartIcon,
+        setProductDetails,
+        productDetails
       }}
     >
       {children}

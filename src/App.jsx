@@ -12,7 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react"
-
+import ProductDetails from "./pages/productDetails"
 
 
 function App() {
@@ -45,6 +45,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/cart" element={<CartPage />} />
+          <Route path="/productDetails" element={<ProductDetails />} />
 
         </Routes>
 

@@ -125,6 +125,10 @@ function Products() {
                                 imgUrl={product.imgUrl}
                                 productName={product.productName}
                                 price={product.price}
+                                description={product.description}
+                                reviews={product.reviews}
+                                id={product.id}
+                                avgRating = {product.avgRating}
                                 addToCart={() => addToCart(product)}
                             />
                         </div>
